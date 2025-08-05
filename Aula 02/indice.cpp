@@ -7,8 +7,8 @@ int main() {
     string nome;
     float peso;
     float altura;
-    float resultado;
-    bool IMC;
+    float imc;
+    string mensagem;
 
     cout << "Informe o seu nome: ";
     cin >> nome;
@@ -17,10 +17,10 @@ int main() {
     cout << "Informe a sua altura: ";
     cin >> altura ;
     
-    resultado = (peso / (altura * altura)) ;
-    IMC = ((resultado >= 18.5) &&  (resultado <= 24.9)) ? "Peso normal" : "Fora da normalidade" ;
-    cout << nome << ", seu IMC eh : " << resultado ;
-    cout << IMC ;
+    imc = (peso / (altura * altura)) ;
+    mensagem = ((imc >= 18.5) &&  (imc <= 24.9)) ? "Peso normal" : "Fora da normalidade" ;
+    cout << nome << ", seu IMC eh : " << imc ;
+    cout << mensagem ;
     
      
     return 0;
